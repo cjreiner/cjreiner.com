@@ -20,6 +20,11 @@ $(document).ready(function(){
 		location = "ChrisReinerResume.pdf";
 	}); //end click
 
+	//resume download
+	$('#resumeBtn2').click(function(e){
+		location = "ChrisReinerResume.pdf";
+	}); //end click
+
 
 	//Analytics Events	
 	$('#emailMe').click(function(e){
@@ -39,6 +44,16 @@ $(document).ready(function(){
 			'category' : 'click',
 			'action' : 'download',
 			'label' : 'resume'
+		});
+	}); //end click
+
+	$('#resumeBtn2').click(function(e){
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			'event' : 'customEvent',
+			'category' : 'click',
+			'action' : 'download',
+			'label' : 'resume2'
 		});
 	}); //end click
 	//End Analytics Events
